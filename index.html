@@ -25,6 +25,10 @@
                 height: 500px;
                 width: auto;
             }
+            #chart4{
+                height: 500px;
+                width: auto;
+            }
         </style>
     </head>
     <body>
@@ -35,6 +39,7 @@
                         <li class="nav-item"><a class="nav-link" href="#chart-title-1">機車每萬人死傷率變化</a></li>
                         <li class="nav-item"><a class="nav-link" href="#chart-title-2">各車種每萬人死亡率變化</a></li>
                         <li class="nav-item"><a class="nav-link" href="#chart-title-3">大型重型機車領牌數量歷年成長變化</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#chart-title-2">台灣歷年交通死亡/受傷人數變化</a></li>
                     </ul>
                 </div>
                 <div class="col col-lg-8">
@@ -44,6 +49,8 @@
                     <div id="chart2" class="block shadow-lg"></div>
                     <h3 id="chart-title-3" class="">大型重型機車<small class="text-muted">領牌數量歷年成長變化</small></h3>
                     <div id="chart3" class="block shadow-lg"></div>
+                    <h3 id="chart-title-4" class="">台灣交通死傷<small class="text-muted">歷年成長變化</small></h3>
+                    <div id="chart4" class="block shadow-lg"></div>
                 </div>
             </div>
         </div>
@@ -188,6 +195,52 @@
                         lines: [
                             {value: '96年', text: '開放 550cc 以上高架道路', position: 'end'},
                             {value: '101年', text: '開放未滿 550cc 高架道路', position: 'end'},
+                        ]
+                    }
+                },
+                axis: {
+                    x: {
+                        type: 'category'
+                    },
+                    y2: {
+                        show: true
+                    }
+                }
+            });
+            var chart4 = c3.generate({
+                bindto: '#chart4',
+                subchart: {
+                    show: true
+                },
+                data: {
+                    x : 'x',
+                    columns: [
+                        ['x', '77年','78年','79年','80年','81年','82年','83年','84年','85年','86年','87年','88年','89年','90年','91年','92年','93年','94年','95年','96年','97年','98年','99年','100年','101年','102年','103年','104年','105年','106年','107年'],
+                        ['data1', 7044,6405,6206,4729,3489,2696,3603,3528,3619,3162,2720,2487,52952,64264,86259,120223,137221,155814,160897,163971,170127,184749,219651,235776,249465,278388,307842,305413,305556,296826,320315],
+                        ['data2', 4190,3930,3910,3305,2717,2349,3094,3065,2990,2735,2507,2392,3388,3344,2861,2718,2634,2894,3140,2573,2224,2092,2047,2117,2040,1928,1819,1696,1604,1517,1493],
+                        ['data3','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A',66895,80612,109594,156303,179108,203087,211176,216927,227423,246994,293764,315201,334082,373568,413229,410073,403906,394198,428049],
+                    ],
+                    names: {
+                        data1: '肇事件數',
+                        data2: '死亡人數',
+                        data3: '受傷人數',
+                    },
+                    hide: ['data1'],
+                    axes: {
+                        data1: 'y',
+                        data2: 'y2',
+                        data3: 'y',
+                    },
+                    type: 'line'
+                },
+                grid: {
+                    x: {
+                        lines: [
+                            {value: '83年', text: '台北市強制戴安全帽', position: 'start'},
+                            {value: '86年', text: '全國強制戴安全帽', position: 'start'},
+                            {value: '88年', text: '全國實施強制兩段式左轉、禁行機車'},
+                            {value: '93年', text: '實施路權優先安全第一專案'},
+                            {value: '95年', text: '路權優先安全第一專案結束', position: 'start'},
                         ]
                     }
                 },
