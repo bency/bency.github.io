@@ -301,6 +301,11 @@
                 axis: {
                     x: {
                         type: 'category'
+                    },
+                    y : {
+                        tick: {
+                            format: function (d) { return d / 10000 + "萬"; }
+                        }
                     }
                 }
             });
