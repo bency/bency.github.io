@@ -42,8 +42,8 @@
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="#chart-title-1">機車每萬人死傷率變化</a></li>
                         <li class="nav-item"><a class="nav-link" href="#chart-title-2">各車種每萬人死亡率變化</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#chart-title-4">台灣歷年交通死亡/受傷人數變化</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#chart-title-3">大型重型機車領牌數量歷年成長變化</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#chart-title-3">台灣歷年交通死亡/受傷人數變化</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#chart-title-4">大型重型機車領牌數量歷年成長變化</a></li>
                         <li class="nav-item"><a class="nav-link" href="#chart-title-5">各車種領牌數量歷年成長變化</a></li>
                     </ul>
                 </div>
@@ -52,9 +52,9 @@
                     <div id="chart" class="block shadow-lg"></div>
                     <h3 id="chart-title-2" class="">各車種每萬人<small class="text-muted">死亡率變化</small></h3>
                     <div id="chart2" class="block shadow-lg"></div>
-                    <h3 id="chart-title-4" class="">台灣交通死傷<small class="text-muted">歷年成長變化</small></h3>
+                    <h3 id="chart-title-3" class="">台灣交通死傷<small class="text-muted">歷年成長變化</small></h3>
                     <div id="chart4" class="block shadow-lg"></div>
-                    <h3 id="chart-title-3" class="">大型重型機車<small class="text-muted">領牌數量歷年成長變化</small></h3>
+                    <h3 id="chart-title-4" class="">大型重型機車<small class="text-muted">領牌數量歷年成長變化</small></h3>
                     <div id="chart3" class="block shadow-lg"></div>
                     <h3 id="chart-title-5" class="">各車種<small class="text-muted">領牌數量歷年成長變化</small></h3>
                     <div id="chart5" class="block shadow-lg"></div>
@@ -159,7 +159,7 @@
                     }
                 }
             });
-            var chart3 = c3.generate({
+            var chart4 = c3.generate({
                 bindto: '#chart3',
                 subchart: {
                     show: false
@@ -232,7 +232,7 @@
                     }
                 }
             });
-            var chart4 = c3.generate({
+            var chart3 = c3.generate({
                 bindto: '#chart4',
                 subchart: {
                     show: false
