@@ -208,6 +208,11 @@
                     x: {
                         type: 'category'
                     },
+                    y : {
+                        tick: {
+                            format: function (d) { return d / 10000 + "萬"; }
+                        }
+                    },
                     y2: {
                         show: true
                     }
@@ -259,6 +264,11 @@
                     },
                     y2: {
                         show: true
+                    },
+                    y : {
+                        tick: {
+                            format: function (d) { return d / 10000 + "萬"; }
+                        }
                     }
                 }
             });
