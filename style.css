@@ -4,23 +4,7 @@
 .block{
     margin-bottom: 50px;
 }
-#chart{
-    height: 400px;
-    width: auto;
-}
-#chart2{
-    height: 500px;
-    width: auto;
-}
-#chart3{
-    height: 500px;
-    width: auto;
-}
-#chart4{
-    height: 500px;
-    width: auto;
-}
-#chart5{
+.chart{
     height: 500px;
     width: auto;
 }
