@@ -222,7 +222,7 @@ var chart3 = c3.generate({
         },
         y : {
             tick: {
-                format: function (d) { return d / 10000 + "萬"; }
+                format: function (d) { return Number.parseFloat(d / 10000).toFixed(2) + "萬"; }
             }
         }
     }
@@ -269,7 +269,7 @@ var chart5 = c3.generate({
         },
         y : {
             tick: {
-                format: function (d) { return d / 10000 + "萬"; }
+                format: function (d) { return Number.parseFloat(d / 10000).toFixed(2) + "萬"; }
             }
         }
     }
