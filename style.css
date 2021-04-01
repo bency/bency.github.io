@@ -8,3 +8,14 @@
     height: 500px;
     width: auto;
 }
+@media screen and (min-height: 900px) {
+    .chart{
+        height: 800px;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .chart{
+        height: 600px;
+    }
+}
