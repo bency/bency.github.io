@@ -165,6 +165,13 @@
                                             <p>按第一當事者駕乘車種分之受傷率統計</p>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                        <div class="nav-card">
+                                            <i class="fas fa-walking"></i>
+                                            <h5><a href="#chart-title-11">台南行人事故</a></h5>
+                                            <p>機車左轉政策與行人事故趨勢查證</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -333,6 +340,31 @@
                                     <div id="chart10" class="chart large-chart"></div>
                                 </div>
                             </div>
+
+                            <!-- Chart 11 - Tainan pedestrian accidents vs motorcycle left-turn policy -->
+                            <div class="chart-container" id="analysis">
+                                <div class="chart-header">
+                                    <h3 id="chart-title-11">
+                                        <i class="fas fa-walking me-2"></i>
+                                        臺南市行人事故趨勢
+                                        <small class="text-muted">
+                                            110 ~ 114 年 月度統計
+                                            <a href="https://data.gov.tw/dataset/102769" target="_blank" class="text-decoration-none">
+                                                資料來源 <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="https://traffic.tainan.gov.tw/Announcement/news?searchKeyword=%E5%BE%85%E8%BD%89" target="_blank" class="text-decoration-none">
+                                                政策公告 <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </small>
+                                    </h3>
+                                </div>
+                                <div class="chart-body">
+                                    <div class="alert alert-light border mb-4">
+                                        <strong>查證結論：</strong>依臺南市道路交通事故當事者統計，開放機車直接左轉（112/10 試辦、113/08 大規模實施）後，<strong>行人事故案件數與占比並未顯著上升</strong>。113 年 8 月政策上路當月屬正常月度波動，年度行人案件數 112→113→114 呈緩降趨勢。此圖表紅色虛線標示政策時間點。
+                                    </div>
+                                    <div id="chart11" class="chart large-chart"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -366,6 +398,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.4/c3.min.js"></script>
         <script src="data.js"></script>
+        <script src="tainan-pedestrian-chart.js"></script>
 
         <script>
             // Set last updated date
